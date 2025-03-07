@@ -15,13 +15,6 @@
 body {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-}
-
-
-main {
-  flex-grow: 1;
-}
-
-main:has(.back-link) {
-  text-align: center;
+  background-color: #1c1d20;
+  color: #fafafa;
 }
