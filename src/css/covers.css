@@ -1,5 +1,4 @@
 .covers {
-  /* border: 2px solid orange; */
   width: 100%;
 
   padding-top: 32px;
@@ -7,9 +6,12 @@
 }
 
 .covers-content {
-  /* border: 2px solid red; */
   height: 508px;
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 
   position: relative;
   overflow: hidden;
@@ -25,4 +27,39 @@
   .covers-content {
     background-image: url(../img/covers/background-mobile@2x.png);
   }
+}
+
+.covers-list {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: calc(282px * 3 + 10px * 2);
+  height: 100%;
+  justify-content: center;
+
+  transform: rotate(16deg);
+  flex-shrink: 0;
+}
+
+.covers-item {
+  width: 282px;
+  height: 162px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.covers-item:nth-child(6),
+.covers-item:nth-child(5),
+.covers-item:nth-child(4),
+.covers-item:nth-child(10) {
+  transform: translateX(-50%);
 }
