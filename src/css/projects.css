@@ -1,0 +1,60 @@
+.projects-section {
+}
+.projects-title {
+}
+.projects-swiper-container {
+}
+.projects {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.description-content {
+}
+.technologies-heading {
+}
+.technologies {
+}
+.projects-name {
+}
+.btn-projects {
+}
+.projects-content {
+}
+.projects-picture {
+}
+.projects-pic {
+}
+.projects-swiper-buttons {
+}
+.projects-button-prev {
+}
+.projects-icon {
+}
+.projects-button-next {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  
