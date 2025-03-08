@@ -17,7 +17,7 @@ const callback = entries => {
 
 const options = {
   root: null, // null = відстеження у всьому вікні
-  threshold: 0.1, // Спрацьовує, коли 50% елемента видно
+  threshold: 0.1, // Спрацьовує, коли 10% елемента видно
 };
 
 const observer = new IntersectionObserver(callback, options);
