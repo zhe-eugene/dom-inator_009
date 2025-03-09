@@ -65,6 +65,7 @@
   transform: rotate(16deg);
   position: absolute;
   left: 0;
+  /* top: 60%; */
   top: 20%;
   animation-name: coversAnimationWrapper;
   animation-duration: 10s;
@@ -74,12 +75,13 @@
 }
 
 .covers-wrapper.animate {
+  top: 60%;
   animation-play-state: running;
 }
 
 @keyframes coversAnimationWrapper {
   0% {
-    transform: rotate(16deg) translateX(0%);
+    transform: rotate(16deg) translateX(-25%);
   }
   100% {
     transform: rotate(16deg) translateX(-50%);

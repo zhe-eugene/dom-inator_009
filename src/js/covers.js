@@ -5,6 +5,13 @@ const refs = {
   wrapper: document.querySelector('.covers-wrapper'),
 };
 
+(() => {
+  const listHtml = refs.wrapper.innerHTML;
+  console.log(listHtml);
+  refs.wrapper.innerHTML = [...Array(4).keys()].map(() => listHtml).join('');
+  // refs.wrapper.styles.top = '60%';
+})();
+
 const callback = entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
