@@ -7,7 +7,6 @@ const refs = {
 
 (() => {
   const listHtml = refs.wrapper.innerHTML;
-  console.log(listHtml);
   refs.wrapper.innerHTML = [...Array(4).keys()].map(() => listHtml).join('');
 })();
 
