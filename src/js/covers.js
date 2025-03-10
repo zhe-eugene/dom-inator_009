@@ -5,6 +5,11 @@ const refs = {
   wrapper: document.querySelector('.covers-wrapper'),
 };
 
+(() => {
+  const listHtml = refs.wrapper.innerHTML;
+  refs.wrapper.innerHTML = [...Array(4).keys()].map(() => listHtml).join('');
+})();
+
 const callback = entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
