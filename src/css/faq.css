@@ -14,7 +14,7 @@
 .listTitle{
     color: #fafafa;
 font-weight: 600;
-/* font-size: 20px; */
+font-size: 18px;
 }
 .listText{
     color: rgba(250, 250, 250, 0.6);
@@ -26,8 +26,13 @@ font-weight: 600;
 }
 
 .accordion-item {
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 16px;
+  cursor: pointer;
 }
 
 .accordion-header {
@@ -40,8 +45,6 @@ font-weight: 600;
   border: none;
   text-align: left;
   cursor: pointer;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .accordion-icon {
@@ -67,8 +70,6 @@ fill-opacity: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .btnOpenClose{
@@ -98,7 +99,7 @@ fill-opacity: 0;
   gap: 101px;
 }
 .faqfive{
-  gap: 101px;
+  gap: 120px;
 }
 .faqsix{
   gap: 20px;
@@ -107,9 +108,19 @@ fill-opacity: 0;
 @media only screen and (min-width: 768px){
   .faq {
     width: 704px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .accordion-item {
     padding-top: 32px;
     padding-bottom: 32px;
+    gap: 26px;
   }
+  .listText{
+    color: rgba(250, 250, 250, 0.6);
+    padding-bottom: 0px;
+    max-width: 656px;
+}
   .faqFirst{
     gap:90px;
   }
@@ -126,15 +137,15 @@ fill-opacity: 0;
     gap: 179px;
   }
   .faqsix{
-    gap: 179px;
+    gap: 220px;
   }
 }
 
 @media only screen and (min-width: 1440px){
   .faq {
     width: 1376px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
   .accordion-item {
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
@@ -172,6 +183,9 @@ fill-opacity: 0;
   .orderSix{
     order: 5;
     padding-left: 32px;
+  }
+  .faqFirst{
+    gap:34px;
   }
 }
 
