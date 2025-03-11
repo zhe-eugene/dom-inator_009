@@ -3,8 +3,11 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+import closeIcon from '../img/reviews/closeIcon.svg';
+import errorIcon from '../img/reviews/errorIcon.svg';
 
 export const refs = {
   reviewsSectionBox: document.querySelector('.swiper'),
@@ -16,18 +19,54 @@ export async function getReviews() {
   const params = {};
   try {
     const data = await axios.get(apiUrl, params).then(res => {
-      console.log(res.data);
       const markup = markupRender(res.data);
       return (refs.reviewsListBox.innerHTML = markup);
     });
     return data;
   } catch (error) {
+    messageError(error);
     refs.reviewsSectionBox.innerHTML =
       '<p class="reviews-not-found">Not Found</p>';
     console.log(error);
   }
 }
+export const iziOpt = {
+  messageColor: '#FAFAFB',
+  messageSize: '16px',
+  backgroundColor: '#EF4040',
+  iconUrl: errorIcon,
+  close: false,
+  buttons: [
+    [
+      `<button><img src = "${closeIcon}"/></button>`,
+      function (instance, toast) {
+        instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');
+      },
+      true,
+    ],
+  ],
+  transitionIn: 'bounceInLeft',
+  position: 'topRight',
+  displayMode: 'replace',
+  closeOnClick: true,
+};
 
+export function messageError(error) {
+  const options = {
+    rootMargin: '0px',
+    threshold: 1,
+  };
+  const observer = new IntersectionObserver(arr => {
+    const info = arr[0];
+    if (info.isIntersecting) {
+      iziToast.show({
+        ...iziOpt,
+        message: `Sorry! ${error}`,
+      });
+    }
+  }, options);
+  observer.observe(refs.reviewsSectionBox);
+}
 export function markupRender(data) {
   const markup = data
     .map(
@@ -56,21 +95,24 @@ export function markupRender(data) {
 }
 
 getReviews();
+
 const swiper = new Swiper('.swiper', {
   speed: 400,
+  spaceBetween: 16,
+  autoHeight: true,
+  centeredSlidesBounds: true,
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerGroup: 1,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 16,
+      slidesPerGroup: 2,
     },
     1440: {
       slidesPerView: 4,
-      spaceBetween: 16,
+      slidesPerGroup: 4,
     },
   },
   centeredSlides: true,
@@ -85,12 +127,9 @@ const swiper = new Swiper('.swiper', {
     onlyInViewport: false,
   },
   enabled: true,
-  slidesPerView: 1,
   grabCursor: true,
 });
 
 const swiperReviews = document.querySelector('.swiper').swiper;
 
-swiperReviews.on('slideChange', function () {
-  console.log('slide changed');
-});
+swiperReviews.on('slideChange');
