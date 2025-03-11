@@ -4,16 +4,25 @@ body {
 
 /* phone styles */
 .benefits {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    margin-left: 16px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 64px;
     
 }
 
+.container {
+    width: 100%;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .benefits-header {
-    font-family: Inter Tight;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -29,8 +38,6 @@ body {
 .benefits-container {
     min-width: 320px;
     max-width: 428px;
-    padding-left: 16px;
-    padding-left: 16px;
     margin-left: auto;
     margin-right: auto;
 
@@ -40,6 +47,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -48,8 +57,8 @@ body {
     flex-direction: column;
     background-color: #242527;
     width: 100%;
-    max-width: 332px;
-    max-height: 270px;
+    width: 344px;
+    height: 270px;
     border-radius: 20px;
     padding: 24px;
 }
@@ -73,7 +82,6 @@ body {
 }
 
 .benefits-third-header {
-    font-family: Inter Tight;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
@@ -86,7 +94,6 @@ body {
 }
 
 .benefits-text-item {
-    font-family: Inter Tight;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -127,9 +134,12 @@ body {
 @media screen and (min-width: 768px) {
     .benefits {
         max-width: 768px;
-        margin: 32px 0 32px 64px;
+
     }
 
+    .container {
+        max-width: 768px;
+    }
     .benefits-container {
         align-items: flex-start;
         margin-left: auto;
@@ -147,8 +157,8 @@ body {
     }
 
     .benefits-item {
-        gap: 16px;
-        column-gap: 16px;
+        width: 332px;
+        height: 270px;
     }
 
     .benefits-btn {
@@ -157,22 +167,26 @@ body {
 }
 
 /* Desktop styles */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
     .benefits {
-
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-        max-width: 1720px;
+        max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
     }
 
+ .container {
+     max-width: 1440px;
+        align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+ }
+
     .benefits-container {
-        align-items: flex-start;
-        max-width: 1158px;
+
         margin-left: auto;
-        margin-right: 0;
+        margin-right: 32px;
     }
 
     .benefits-header {
