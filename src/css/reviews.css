@@ -112,8 +112,6 @@
   .reviews-list {
     display: flex;
     justify-content: flex-start;
-  }
-  .swiper-slide-visible {
-    min-height: 100%;
+    align-items: stretch;
   }
 }

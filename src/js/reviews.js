@@ -96,40 +96,37 @@ export function markupRender(data) {
 
 getReviews();
 
-const swiper = new Swiper('.swiper', {
-  speed: 400,
-  spaceBetween: 16,
-  autoHeight: true,
-  centeredSlidesBounds: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
+function initSwiper() {
+  new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 16,
+    autoHeight: true,
+    centeredSlidesBounds: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        autoHeight: false,
+      },
+      1440: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        autoHeight: false,
+      },
     },
-    768: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+    direction: 'horizontal',
+    modules: [Navigation],
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    1440: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-    },
-  },
-  centeredSlides: true,
-  direction: 'horizontal',
-  modules: [Navigation],
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  enabled: true,
-  grabCursor: true,
-});
+    keyboard: { enabled: true },
+    mousewheel: { enabled: true },
+  });
+}
 
-const swiperReviews = document.querySelector('.swiper').swiper;
-
-swiperReviews.on('slideChange');
+initSwiper();
