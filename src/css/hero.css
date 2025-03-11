@@ -30,7 +30,7 @@
 .background-overlay {
   position: absolute;
   top: 0;
-  left: calc(-1 * (100% / 7)); 
+  left: calc(-1 * (100% / 7));
   width: 100%;
   height: 100%;
   background-image: url(/img/hero/hero-mob.webp);
@@ -58,6 +58,17 @@
   flex: 1 1 100%;
   width: 100%;
 }
+.nowrap {
+  white-space: nowrap;
+}
+
+.desktop-nowrap {
+  white-space: normal;
+}
+
+.mobile-only {
+  display: inline;
+}
 
 .hero-title {
   max-width: 100%;
@@ -70,11 +81,22 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: start;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .hero-nav-wrapper {
   display: flex;
   width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero-links {
@@ -233,19 +255,26 @@
     justify-content: center;
   }
 
+  .desktop-nowrap {
+    white-space: nowrap;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
   .hero-text {
     width: auto;
     max-width: 1084px;
     margin-bottom: 243px;
     flex: 1 0 auto;
-    
   }
 
   .hero-title {
     font-size: 90px;
     width: auto;
     max-width: 100%;
-    white-space: normal; 
+    white-space: normal;
     text-align: start;
   }
 }
