@@ -2,11 +2,11 @@
   <div class="container">
     <h2 class="projects-title">Projects</h2>
     <div class="projects-swiper-container">
-      <div class="projects swiper-wrapper">
-        <div class="projects swiper-slide">
+<ul class="projects-list swiper-wrapper">
+      <li class="projects-item swiper-slide">
           <div class="description-content">
-            <h3 class="technologies-heading">Список технологій</h3>
-            <ul class="technologies">
+            <h3 class="technologies-heading">Technologies used</h3>
+            <ul class="technologies" aria-label="Список технологій">
               <li>#react</li>
               <li>#js</li>
               <li>#node</li>
@@ -17,6 +17,8 @@
             </p>
             <a
               href="https://github.com/zhe-eugene/dom-inator_009"
+              target="_blank"
+              rel="noopener noreferrer"
               class="btn-projects"
               aria-label="Переглянути проект Programming Across Borders"
             >
@@ -48,17 +50,18 @@
               />
               <img
                 class="projects-pic"
-                src="./img/projects/projects_mob_1x_1.jpg,"
-                alt="Projects 1"
+                src="./img/projects/projects_mob_1x_1.jpg"
+                alt="Project 1"
                 width="311"
                 height="195"
+                loading="lazy"
               />
             </picture>
           </div>
-        </div>
-
-        <div class="projects swiper-slide">
+        </li>
+      <li class="projects-item swiper-slide">
           <div class="description-content">
+            <h3 class="technologies-heading">Technologies used</h3>
             <ul class="technologies" aria-label="Список технологій">
               <li>#react</li>
               <li>#js</li>
@@ -70,10 +73,13 @@
             </p>
             <a
               href="https://github.com/zhe-eugene/dom-inator_009"
+              target="_blank"
+              rel="noopener noreferrer"
               class="btn-projects"
               aria-label="Переглянути проект Programming Across Borders"
-              >See project</a
             >
+              See project
+            </a>
           </div>
           <div class="projects-content">
             <picture class="projects-picture">
@@ -100,17 +106,18 @@
               />
               <img
                 class="projects-pic"
-                src="./img/projects/projects_mob_1x_2.jpg,"
-                alt="Projects 2"
+                src="./img/projects/projects_mob_1x_2.jpg"
+                alt="Project 2"
                 width="311"
                 height="195"
+                loading="lazy"
               />
             </picture>
           </div>
-        </div>
-
-        <div class="projects swiper-slide">
+        </li>
+        <li class="projects-item swiper-slide">
           <div class="description-content">
+            <h3 class="technologies-heading">Technologies used</h3>
             <ul class="technologies" aria-label="Список технологій">
               <li>#react</li>
               <li>#js</li>
@@ -126,8 +133,9 @@
               rel="noopener noreferrer"
               class="btn-projects"
               aria-label="Переглянути проект Programming Across Borders"
-              >See project</a
             >
+              See project
+            </a>
           </div>
           <div class="projects-content">
             <picture class="projects-picture">
@@ -155,15 +163,16 @@
               <img
                 class="projects-pic"
                 src="./img/projects/projects_mob_1x_3.jpg"
-                alt="Projects 3"
+                alt="Project 3"
                 width="311"
                 height="195"
+                loading="lazy"
               />
             </picture>
           </div>
-        </div>
-      </div>
-      <div class="projects-swiper-buttons">
+        </li>
+      </ul>
+    <div class="projects-swiper-buttons">
         <button
           class="projects-button-prev"
           tabindex="0"
@@ -173,7 +182,6 @@
             <use href="./img/icons.svg#icon-arrow-left"></use>
           </svg>
         </button>
-
         <button
           class="projects-button-next"
           tabindex="0"
@@ -187,3 +195,15 @@
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
