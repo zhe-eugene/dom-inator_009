@@ -1,5 +1,6 @@
 // accordion
 import Accordion from 'accordion-js';
+
 document.addEventListener('DOMContentLoaded', () => {
   const accordions = document.querySelectorAll('.ac');
 

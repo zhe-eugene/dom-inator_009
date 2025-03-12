@@ -8,17 +8,12 @@
       personality.
     </h3>
     <picture class="about-picture">
-      
       <source
         media="(max-width: 320px)"
-        srcset="
-          ./img/about/image-mob.webp 1x,
-          ./img/about/image-mob.webp 2x
-        "
+        srcset="./img/about/image-mob.webp 1x, ./img/about/image-mob.webp 2x"
         type="image/webp"
       />
 
-      
       <source
         media="(min-width: 321px) and (max-width: 374px)"
         srcset="
@@ -28,17 +23,12 @@
         type="image/webp"
       />
 
-      
       <source
         media="(min-width: 375px) and (max-width: 767px)"
-        srcset="
-          ./img/about/image-tabl.webp 1x,
-          ./img/about/image-tabl.webp 2x
-        "
+        srcset="./img/about/image-tabl.webp 1x, ./img/about/image-tabl.webp 2x"
         type="image/webp"
       />
 
-     
       <source
         media="(min-width: 768px) and (max-width: 1157px)"
         srcset="
@@ -48,7 +38,6 @@
         type="image/webp"
       />
 
-     
       <source
         media="(min-width: 1158px)"
         srcset="
@@ -58,7 +47,6 @@
         type="image/webp"
       />
 
-      
       <img
         src="./img/about/image-tabl.webp"
         alt="About-img"
@@ -71,7 +59,11 @@
       <li class="ac">
         <h4 class="ac-header">
           About me
-          <button type="button" class="ac-trigger"></button>
+          <button type="button" class="ac-trigger">
+            <svg class="btn-up-one" width="20" height="20">
+              <use href="../img/icons.svg#icon-up"></use>
+            </svg>
+          </button>
         </h4>
         <ul class="ac-panel info-work about-item ac-flex">
           <li class="ac-text">
@@ -101,7 +93,11 @@
       <li class="ac">
         <h4 class="ac-header">
           rOLE
-          <button type="button" class="ac-trigger"></button>
+          <button type="button" class="ac-trigger">
+            <svg class="btn-up" width="20" height="20">
+              <use href="../img/icons.svg#icon-down"></use>
+            </svg>
+          </button>
         </h4>
         <ul class="ac-panel about-info">
           <li class="ac-text">Frontend development</li>
@@ -113,15 +109,20 @@
       <li class="ac">
         <h4 class="ac-header">
           eDUCATION
-          <button type="button" class="ac-trigger"></button>
+          <button type="button" class="ac-trigger">
+            <svg class="btn-up" width="20" height="20">
+              <use href="../img/icons.svg#icon-down"></use>
+            </svg>
+          </button>
         </h4>
         <ul class="ac-panel about-info">
           <li class="ac-text">
-            2018 - 2019 / Frontend Development Diploma,  GoIT IT <br>School, New York
+            2018 - 2019 / Frontend Development Diploma, GoIT IT <br />School,
+            New York
           </li>
           <li class="ac-text">
-            2019 - 2020 / Advanced Web Development Certificate, GoIT IT <br>School,
-            New York
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+            <br />School, New York
           </li>
           <li class="ac-text">
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
@@ -131,7 +132,6 @@
     </ul>
     <div class="swiper">
       <ul class="swiper-wrapper">
-       
         <li class="item-color swiper-slide">HTML/CSS</li>
         <li class="swiper-slide">JavaScript</li>
         <li class="swiper-slide none-slide-react">React</li>
@@ -140,7 +140,7 @@
         <li class="swiper-slide none-slide">Soft skills</li>
         <li class="swiper-slide-none"></li>
       </ul>
-      
+
       <button class="swiper-button-next"></button>
     </div>
   </div>
