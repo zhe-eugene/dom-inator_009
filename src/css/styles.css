@@ -10,7 +10,6 @@
 @import url('./container.css');
 @import 'modern-normalize/modern-normalize.css';
 
-
 /* Sections style */
 @import url('./header.css');
 @import url('./hero.css');
@@ -19,4 +18,5 @@
 @import url('./footer.css');
 @import url('./projects.css');
 @import url('./faq.css');
+@import url('./covers.css');
 @import url('./reviews.css');
