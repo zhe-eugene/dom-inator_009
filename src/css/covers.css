@@ -74,12 +74,13 @@
 }
 
 .covers-wrapper.animate {
+  top: 80%;
   animation-play-state: running;
 }
 
 @keyframes coversAnimationWrapper {
   0% {
-    transform: rotate(16deg) translateX(0%);
+    transform: rotate(16deg) translateX(-25%);
   }
   100% {
     transform: rotate(16deg) translateX(-50%);
@@ -87,6 +88,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .covers {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   .covers-content {
     height: 960px;
     background-image: url(../img/covers/background-tablet.png);
@@ -105,5 +111,32 @@
     .covers-content {
       background-image: url(../img/covers/background-tablet@2x.png);
     }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .covers {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .covers-content {
+    background-image: url(../img/covers/background-desktop.png);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .covers-content {
+      background-image: url(../img/covers/background-desktop@2x.png);
+    }
+  }
+
+  .covers-list {
+    gap: 50px;
+    width: calc(544px * 3 + 50px * 2 + 50px);
+    padding-left: 50px;
+  }
+
+  .covers-wrapper.animate {
+    top: 60%;
   }
 }
