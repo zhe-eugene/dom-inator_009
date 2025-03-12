@@ -5,8 +5,9 @@ import 'swiper/css/navigation';
 
 document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.projects-swiper-container', {
-        modules: [Navigation, Autoplay, Keyboard],
+        modules: [Navigation, Keyboard],
         loop: false,
+        speed: 3000,
         keyboard: {
             enabled: true,
         },
@@ -15,21 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.projects-button-prev'
         },
         watchOverflow: true,
-        slidesPerView: 1,
-        spaceBetween: 15,
+        slidesPerView: 1, 
+        spaceBetween: 15, 
         breakpoints: {
-            375: {
-                slidesPerView: 1,
-                spaceBetween: 15
-            },
-            768: {
-                slidesPerView: 1,
-                spaceBetween: 32
-            },
-            1440: {
-                slidesPerView: 1,
-                spaceBetween: 32
-            }
+            375: {},
+            768: { spaceBetween: 32 },
+            1440: { spaceBetween: 32 }
         },
         on: {
             init: function() {
@@ -40,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         }
     });
-    
+
     function updateNavigationButtons(swiper) {
         const prevButton = document.querySelector('.projects-button-prev');
         const nextButton = document.querySelector('.projects-button-next');
         
         if (prevButton && nextButton) {
-        prevButton.disabled = swiper.isBeginning;
-        nextButton.disabled = swiper.isEnd;
+            prevButton.disabled = swiper.isBeginning;
+            nextButton.disabled = swiper.isEnd;
+        }
     }
-}
 });

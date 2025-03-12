@@ -105,6 +105,7 @@
   justify-content: center;
   align-items: center;
   background-color: #242527;
+  border: 1px solid #242527;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   padding: 32px;
@@ -150,6 +151,7 @@
 .projects-button-prev:hover,
 .projects-button-next:hover {
   background-color: var(--cards);
+  border-color: #fafafa
 }
 
 .projects-button-prev:focus,
@@ -163,6 +165,12 @@
   height: 24px;
   stroke: #fafafa80;
   fill: none;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.projects-button-prev:hover .projects-icons,
+.projects-button-next:hover .projects-icons {
+  stroke: #fafafa;
 }
 
 .projects-button-prev:disabled,
@@ -267,11 +275,6 @@
     height: 55px;
     flex-wrap: nowrap;
 
-  }
-
-  .technologies li {
-    padding: 18px 18px;
-    white-space: normal;
   }
 
   .projects-name {
