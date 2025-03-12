@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 //swiper
 
 import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
-import '/css/about-me.css';
+//import 'swiper/swiper-bundle.css';
+//import '/css/about-me.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.skills-swipe', {
