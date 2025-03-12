@@ -6,15 +6,15 @@ import 'swiper/css/pagination';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import closeIcon from '../img/reviews/closeIcon.svg';
-import errorIcon from '../img/reviews/errorIcon.svg';
+import closeIcon from '../img/reviews/closeIcon.png';
+import errorIcon from '../img/reviews/errorIcon.png';
 
-export const refs = {
+const refs = {
   reviewsSectionBox: document.querySelector('.swiper'),
   reviewsListBox: document.querySelector('.reviews-list'),
 };
 
-export async function getReviews() {
+async function getReviews() {
   const apiUrl = 'https://portfolio-js.b.goit.study/api/reviews';
   const params = {};
   try {
@@ -27,10 +27,9 @@ export async function getReviews() {
     messageError(error);
     refs.reviewsSectionBox.innerHTML =
       '<p class="reviews-not-found">Not Found</p>';
-    console.log(error);
   }
 }
-export const iziOpt = {
+const iziOpt = {
   messageColor: '#FAFAFB',
   messageSize: '16px',
   backgroundColor: '#EF4040',
@@ -51,7 +50,7 @@ export const iziOpt = {
   closeOnClick: true,
 };
 
-export function messageError(error) {
+function messageError(error) {
   const options = {
     rootMargin: '0px',
     threshold: 1,
@@ -67,7 +66,7 @@ export function messageError(error) {
   }, options);
   observer.observe(refs.reviewsSectionBox);
 }
-export function markupRender(data) {
+function markupRender(data) {
   const markup = data
     .map(
       ({
