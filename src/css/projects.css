@@ -108,7 +108,7 @@
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   padding: 32px;
-  }
+}
 
 .projects-picture {
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -181,7 +181,7 @@
   .projects-name {
     width: 100%;
     letter-spacing: -0.03em;
- 
+
   }
 }
 
@@ -224,7 +224,7 @@
     width: 614px;
     height: 385px;
   }
-  
+
   .projects-swiper-buttons {
     gap: 20px;
     margin-top: 64px;
@@ -265,7 +265,8 @@
   .technologies {
     width: 312px;
     height: 55px;
-  
+    flex-wrap: nowrap;
+
   }
 
   .technologies li {
@@ -282,45 +283,37 @@
   .btn-projects {
     width: 177px;
     height: 55px;
+  }
+
+  .projects-content {
+    max-width: 50%;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 24px;
+  }
+
+  .projects-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .projects-swiper-buttons {
+    gap: 20px;
+    margin-top: 64px;
+  }
+
+  .projects-button-prev,
+  .projects-button-next {
+    width: 68px;
+    height: 68px;
+
+  }
+
+  .projects-icons {
+    width: 32px;
+    height: 32px;
+  }
 }
-
-.projects-content {
-  max-width: 50%;
-  padding-left: 37px;
-  padding-right: 37px;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 24px;
-}
-
-.projects-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.projects-swiper-buttons {
-   gap: 20px;
-  margin-top: 64px;
-}
-
-.projects-button-prev,
-.projects-button-next {
-  width: 68px;
-  height: 68px;
-  
-}
-
-.projects-icons {
-  width: 32px;
-  height: 32px;
-}
-}
-
-
-
-
-
-
-
-

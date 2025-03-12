@@ -15,11 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.projects-button-prev'
         },
         watchOverflow: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true
-        },
         slidesPerView: 1,
         spaceBetween: 15,
         breakpoints: {
@@ -50,7 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const prevButton = document.querySelector('.projects-button-prev');
         const nextButton = document.querySelector('.projects-button-next');
         
+        if (prevButton && nextButton) {
         prevButton.disabled = swiper.isBeginning;
         nextButton.disabled = swiper.isEnd;
     }
+}
 });
