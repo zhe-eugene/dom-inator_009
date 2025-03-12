@@ -139,6 +139,8 @@ margin-bottom: 64px;
 
     .container {
         max-width: 768px;
+        margin-left: 32px;
+        margin-right: 32px;
     }
     .benefits-container {
         align-items: flex-start;
@@ -150,14 +152,11 @@ margin-bottom: 64px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
-        width: 100%;
-        margin-left: 0;
-        padding-left: 0;
-        margin-right: 0;
     }
 
     .benefits-item {
-        width: 332px;
+        width: 100%;
+        max-width: none;
         height: 270px;
     }
 
@@ -198,7 +197,6 @@ margin-bottom: 64px;
     .benefits-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        flex-direction: column;
         gap: 16px;
         width: 100%;
         margin-left: 0;
