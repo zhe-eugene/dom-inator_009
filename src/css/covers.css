@@ -1,5 +1,6 @@
 .covers {
   width: 100%;
+  min-width: 380px;
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -8,6 +9,7 @@
 .covers-content {
   height: 508px;
   width: 100%;
+  max-width: 1600px;
 
   display: flex;
   justify-content: center;
