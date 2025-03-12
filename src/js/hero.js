@@ -10,3 +10,4 @@ document.addEventListener('DOMContentLoaded', function () {
     heroNav.classList.add('fade-in');
   }, 800);
 });
+
