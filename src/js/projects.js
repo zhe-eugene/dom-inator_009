@@ -3,9 +3,7 @@ import { Navigation, Autoplay, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-
 document.addEventListener('DOMContentLoaded', function () {
-    
     const swiper = new Swiper('.projects-swiper-container', {
         modules: [Navigation, Autoplay, Keyboard],
         loop: false,
@@ -16,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.projects-button-next',
             prevEl: '.projects-button-prev'
         },
-        onlyInViewport: true,
+        watchOverflow: true,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
@@ -25,11 +23,15 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1,
         spaceBetween: 15,
         breakpoints: {
-            1440: {
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            },
+            768: {
                 slidesPerView: 1,
                 spaceBetween: 32
             },
-            768: {
+            1440: {
                 slidesPerView: 1,
                 spaceBetween: 32
             }
@@ -48,16 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const prevButton = document.querySelector('.projects-button-prev');
         const nextButton = document.querySelector('.projects-button-next');
         
-        if (swiper.isBeginning) {
-            prevButton.disabled = true;
-        } else {
-            prevButton.disabled = false;
-        }
-
-        if (swiper.isEnd) {
-            nextButton.disabled = true;
-        } else {
-            nextButton.disabled = false;
-        }
+        prevButton.disabled = swiper.isBeginning;
+        nextButton.disabled = swiper.isEnd;
     }
 });
