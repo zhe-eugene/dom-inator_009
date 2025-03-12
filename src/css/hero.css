@@ -1,5 +1,4 @@
 .hero {
-  min-height: 100vh;
   width: 100%;
   padding-bottom: 32px;
   position: relative;
@@ -30,12 +29,12 @@
 .background-overlay {
   position: absolute;
   top: 0;
-  left: calc(-1 * (100% / 7));
-  width: 100%;
+  left: 0;
+  width: 81.33%;
   height: 100%;
   background-image: url(/img/hero/hero-mob.webp);
   background-size: cover;
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
   z-index: 2;
 }
@@ -48,8 +47,6 @@
   flex-wrap: wrap;
   align-items: flex-start;
   width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
 }
 
 .hero-text {
@@ -72,9 +69,6 @@
 
 .hero-title {
   max-width: 100%;
-  font-family: 'Inter Tight', sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   font-weight: 500;
   font-size: clamp(40px, 13.33vw, 50px);
   line-height: 100%;
@@ -104,10 +98,10 @@
   align-items: center;
   max-width: 342px;
   width: 100%;
-  font-family: 'Inter Tight', sans-serif;
+  /* font-family: 'Inter Tight', sans-serif; */
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: -0.02em;
+  /* letter-spacing: -0.02em; */
   gap: 4px;
 }
 
@@ -191,6 +185,7 @@
 
   .background-overlay {
     background-image: url(/img/hero/hero-tab.webp);
+    width: 75.65%;
   }
 
   .hero-title {
@@ -245,6 +240,7 @@
 @media screen and (min-width: 1440px) {
   .background-base {
     background-image: url(/img/hero/hero-bgc-desk.webp);
+    width: 50.56%;
   }
 
   .background-overlay {
