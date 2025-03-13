@@ -339,11 +339,10 @@ body.modal-open {
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
 
-    .footer-background-image {
-
+    .footer {
         background-image: url(../img/glass-footer1x-desc.png);
         background-repeat: no-repeat;
-        background-position: 100% 50%;
+        background-position: 130% 50%;
 
     }
 
