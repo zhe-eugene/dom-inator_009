@@ -43,13 +43,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  function openModal() {
+    refs.modalBackdrop.classList.add('is-open');
+    refs.footerModal.classList.add('is-open');
+    document.body.classList.add('modal-open');
+    document.addEventListener('keydown', onEscPress);
+  }
+
   function closeModal() {
     refs.modalBackdrop.classList.remove('is-open');
     refs.footerModal.classList.remove('is-open');
+    document.body.classList.remove('modal-open');
     document.removeEventListener('keydown', onEscPress);
   }
 
-  // Function to handle Escape key press
   function onEscPress(event) {
     if (event.key === 'Escape') {
       closeModal();
@@ -57,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   refs.emailInput.addEventListener('input', validateEmail);
-
   refs.textInput.addEventListener('input', truncateComment);
 
   refs.form.addEventListener('submit', async function (e) {
@@ -86,8 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       if (response.status === 201) {
-        refs.modalBackdrop.classList.add('is-open');
-        refs.footerModal.classList.add('is-open');
+        openModal();
         refs.form.reset();
         refs.emailInput.classList.remove('valid', 'invalid');
         emailMessage.textContent = '';
@@ -96,8 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
           title: 'Success',
           message: 'Your request has been submitted successfully!',
         });
-
-        document.addEventListener('keydown', onEscPress);
       } else {
         iziToast.error({
           title: 'Error',
