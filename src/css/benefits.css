@@ -60,6 +60,16 @@ padding-bottom: 32px;
     border-radius: 10px;
 }
 
+.benefits-item-icon:hover {
+    box-shadow: 0 0 8px;
+    transform: scale(1.03);
+}
+
+.benefits-item-icon:focus {
+    box-shadow: 0 0 8px;
+    transform: scale(1.03);
+}
+
 .benefits-icon {
     fill: none;
     stroke: white;
