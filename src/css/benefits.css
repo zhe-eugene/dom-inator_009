@@ -1,7 +1,3 @@
-body {
-    background-color: #1c1d20;
-}
-
 /* phone styles */
 .benefits {
     width: 100%;
@@ -12,7 +8,6 @@ margin-left: auto;
 margin-right: auto;
 margin-bottom: 64px;
 }
-
 
 .benefits-header {
     font-weight: 600;
@@ -143,6 +138,7 @@ margin-bottom: 64px;
     }
 
     .benefits-item {
+
         width: 100%;
         height: 270px;
     }
@@ -171,9 +167,8 @@ margin-bottom: 64px;
  } 
 
     .benefits-container {
-
         margin-left: auto;
-        margin-right: 32px;
+        margin-right: 0;
     }
 
     .benefits-header {
