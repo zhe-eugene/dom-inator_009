@@ -18,8 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.4.0",
-    "axios": "^1.8.2",
     "aos": "^2.3.4",
+    "axios": "^1.8.3",
     "izitoast": "^1.4.0",
     "modern-normalize": "^3.0.1",
     "swiper": "^11.2.5",
