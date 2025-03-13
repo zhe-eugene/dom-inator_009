@@ -64,7 +64,7 @@ orderProjectBtn.addEventListener('click', e => {
   menu.classList.remove('open');
   document.body.classList.remove('no-scroll');
 
-  targetSection.scrollIntoView({
+  footerSection.scrollIntoView({
     behavior: 'smooth',
     block: 'start',
   });
