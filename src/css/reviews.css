@@ -37,7 +37,7 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .review-text {
@@ -108,7 +108,7 @@
   justify-content: center;
 }
 
-.iziToast>.iziToast-body .iziToast-buttons>button {
+.iziToast > .iziToast-body .iziToast-buttons > button {
   background: transparent !important;
   border: none !important;
 }
@@ -142,7 +142,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-
   .reviews {
     padding-top: 82px;
     padding-bottom: 164px;

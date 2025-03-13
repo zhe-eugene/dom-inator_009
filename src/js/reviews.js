@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -97,7 +97,7 @@ getReviews();
 
 function initSwiper() {
   new Swiper('.swiper', {
-    speed: 400,
+    speed: 1000,
     spaceBetween: 16,
     autoHeight: true,
     centeredSlidesBounds: true,
@@ -108,17 +108,18 @@ function initSwiper() {
       },
       768: {
         slidesPerView: 2,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
         autoHeight: false,
       },
       1440: {
         slidesPerView: 4,
-        slidesPerGroup: 4,
+        slidesPerGroup: 1,
         autoHeight: false,
       },
     },
+
     direction: 'horizontal',
-    modules: [Navigation],
+    modules: [Navigation, Keyboard],
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
