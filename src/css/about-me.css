@@ -14,11 +14,12 @@
   background: #242527;
   height: 500px;
 }
+
 .photo-about {
   display: flex;
   gap: 16px;
   flex-direction: column;
-  justify-content: center;   
+  justify-content: center;
   align-items: center;
 }
 
@@ -127,6 +128,7 @@
 .ac-panel.open .ac-text {
   display: flex;
 }
+
 .ac-trigger.open {
   transform: rotate(180deg);
 }
@@ -135,17 +137,18 @@
   transform: rotate(180deg);
 }
 
-.ac > .ac:first-child .ac-panel {
+.ac>.ac:first-child .ac-panel {
   display: flex;
 }
 
-.ac > .ac:first-child .ac-text {
+.ac>.ac:first-child .ac-text {
   display: flex;
 }
 
 .info-work {
   gap: 32px;
 }
+
 .skills-swipe {
   position: relative;
   overflow: hidden;
@@ -154,7 +157,7 @@
   justify-content: flex-start;
   flex-direction: row;
   gap: 55px;
-  
+
 }
 
 .wraper-skills {
@@ -166,7 +169,7 @@
   transition: transform 0.3s ease;
   padding: 0;
   position: relative;
-  
+
 }
 
 .skill-slide {
@@ -226,10 +229,10 @@
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   #about-me {
-    padding-bottom: 48px;
+    padding-bottom: 64px;
   }
 
-    .accordion-container {
+  .accordion-container {
     padding: 64px 0;
     gap: 32px;
   }
@@ -283,6 +286,7 @@
     height: 40px;
     opacity: 1;
   }
+
   .next-button-swiper::after {
     width: 13px;
     height: 22px;
@@ -291,22 +295,22 @@
   .about-info {
     padding-left: 250px;
     padding-right: 32px;
-   
+
   }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   #about-me {
-    padding-top: 48px;
+    padding-top: 96px;
     padding-bottom: 82px;
   }
 
-    .photo-about {
+  .photo-about {
     display: flex;
     gap: 16px;
     flex-direction: row;
-    justify-content: center;   
+    justify-content: center;
     align-items: center;
   }
 

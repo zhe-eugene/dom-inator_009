@@ -260,9 +260,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
-    padding-bottom: 48px;
-  }
 
   .background-base {
     background-image: url(/img/hero/hero-bgc-desk.webp);
