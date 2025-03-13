@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
 //swiper
 
 import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
-import '/css/about-me.css';
+//import 'swiper/swiper-bundle.css';
+//import '/css/about-me.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.skills-swipe', {
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 0,
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function adjustSlideSize() {
-    const slides = document.querySelectorAll('.swiper-slide');
+    const slides = document.querySelectorAll('.skill-slide');
     const screenWidth = window.innerWidth;
 
     slides.forEach(slide => {
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentIndex = 0;
 
   function updateSlideContent() {
-    const slides = document.querySelectorAll('.swiper-slide');
+    const slides = document.querySelectorAll('.skill-slide');
     slides.forEach((slide, index) => {
       slide.textContent =
         slidesContent[(currentIndex + index) % slidesContent.length];
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const nextButton = document.querySelector('.swiper-button-next');
+  const nextButton = document.querySelector('.next-button-swiper');
   if (nextButton) {
     nextButton.addEventListener('click', function () {
       currentIndex = (currentIndex + 1) % slidesContent.length;
