@@ -4,7 +4,7 @@
     padding-bottom: 32px;
 }
 
-.footer-background-image {
+.footer {
 
     background-image: url(../img/glass-footer1x.png);
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ body.modal-open {
 
     }
 
-    .footer-background-image {
+    .footer {
         background-image: url(../img/glass-footer1x-tab.png);
         background-repeat: no-repeat;
         background-position: right;
@@ -342,7 +342,7 @@ body.modal-open {
     .footer {
         background-image: url(../img/glass-footer1x-desc.png);
         background-repeat: no-repeat;
-        background-position: 130% 50%;
+        background-position: 100% 50%;
 
     }
 
