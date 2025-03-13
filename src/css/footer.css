@@ -347,8 +347,8 @@ body.modal-open {
 
     }
 
-    .footer>.container {
-        padding: 0 196px;
+    .footer .container {
+        max-width: 1048px;
     }
 
     .footer-send-email,
