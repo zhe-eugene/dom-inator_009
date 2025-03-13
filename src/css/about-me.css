@@ -302,12 +302,7 @@
     padding-bottom: 82px;
   }
 
-  .con-text {
-    padding: 0;
-    padding-left: 32px;
-  }
-
-  .photo-about {
+    .photo-about {
     display: flex;
     gap: 16px;
     flex-direction: row;
