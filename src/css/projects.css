@@ -187,7 +187,8 @@
 
 @media screen and (min-width: 768px) {
   .projects-section {
-    margin-bottom: 96px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .description-content {
@@ -244,7 +245,8 @@
 
 @media screen and (min-width: 1440px) {
   .projects-section {
-    margin-bottom: 164px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 
 
