@@ -8,9 +8,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 32px;
   width: 100%;
   overflow: hidden;
-  height: calc(100% - 32px);
+  height: 100%;
 }
 
 .background-base {
@@ -18,7 +20,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 32px);
+  height: 100%;
 
   background-image: url(/img/hero/hero-bgc-mob.webp);
   background-size: cover;
@@ -32,7 +34,7 @@
   top: 0;
   left: 0;
   width: 81.33%;
-  height: calc(100% - 32px);
+  height: 100%;
   background-image: url(/img/hero/hero-mob.webp);
   background-size: cover;
   background-position: left center;
@@ -87,7 +89,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .fade-in {
