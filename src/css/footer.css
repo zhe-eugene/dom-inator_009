@@ -147,6 +147,20 @@
 
 }
 
+body.modal-open {
+    overflow: hidden;
+
+}
+
+.footer-backdrop {
+    z-index: 1000;
+
+}
+
+.footer-modal {
+    z-index: 1001;
+}
+
 /* --------------------MODAL----------------------- */
 
 
