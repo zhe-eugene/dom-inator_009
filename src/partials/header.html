@@ -1,1 +1,63 @@
-<header class="header">header</header>
+<header class="header">
+  <div class="header-container">
+    <div class="logo-container">
+      <img
+        srcset="./img/image-logo.jpg 1x, ./img/image-logo-2x.jpg 2x"
+        src="./img/image-logo.jpg"
+        width="80px"
+        height="80px"
+        alt="logo"
+        class="logo-img"
+      />
+      <p class="logo-text">jefferson*</p>
+    </div>
+
+    <div class="menu-btn" id="toggleButton">Menu</div>
+
+    <ul class="nav-list" id="links">
+      <li><a class="nav-link" href="#about-me">About me</a></li>
+      <li><a class="nav-link" href="#benefits">Benefits</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#faq">FAQ</a></li>
+    </ul>
+
+    <a href="#footer" type="button" class="anchor-footer">Order the project</a>
+
+    <button class="burger-btn" type="button" id="openMenuBtn">
+      <svg class="burger-icon" width="28" height="28">
+        <use href="./img/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div id="menu" class="mob-menu">
+  <button class="mobile-menu-close" type="button" id="closeMenuBtn">
+    <svg class="burger-icon" width="28" height="28">
+      <use href="./img/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <ul class="menu-list-mob">
+    <li class="menu-item-mob">
+      <a href="#about-me" class="menu-link">About me</a>
+    </li>
+    <li class="menu-item-mob">
+      <a href="#benefits" class="menu-link">Benefits</a>
+    </li>
+    <li class="menu-item-mob">
+      <a href="#projects" class="menu-link">Projects</a>
+    </li>
+    <li class="menu-item-mob"><a href="#faq" class="menu-link">FAQ</a></li>
+  </ul>
+  <div class="footer-mob-btn">
+    <a
+      href="#footer"
+      type="button"
+      class="anchor-footer-mob"
+      id="orderProjectBtn"
+      >Order the project</a
+    >
+  </div>
+</div>
+
+<script href="../js/header.js" type="module"></script>

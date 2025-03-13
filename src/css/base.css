@@ -1,15 +1,19 @@
 @font-face {
   font-family: 'Inter Tight';
-  src: url('/src/fonts/InterTight-Medium.ttf') format('ttf');
+  src: url('/fonts/InterTight-Medium.woff2') format('woff2'),
+    url('/fonts/InterTight-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter Tight';
-  src: url('/src/fonts/InterTight-SemiBold.ttf') format('ttf');
+  src: url('/fonts/InterTight-SemiBold.woff2') format('woff2'),
+    url('/fonts/InterTight-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -20,4 +24,18 @@ body {
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #fafafa;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
