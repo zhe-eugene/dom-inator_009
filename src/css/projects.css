@@ -31,6 +31,7 @@
   background: #fff;
   border-radius: 24px;
   overflow: hidden;
+  background-color: inherit;
 }
 
 .description-content {
@@ -52,7 +53,7 @@
 .technologies li {
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
-  padding: 13px 18px;
+
 
   color: #1c1d20;
 
@@ -204,6 +205,9 @@
 
   .technologies li {
     padding: 18px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .projects-name {
