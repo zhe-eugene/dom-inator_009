@@ -1,8 +1,6 @@
 .faq {
-    width: 343px;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin: 0 auto;
   }
 
 .faqTitle{
@@ -108,7 +106,6 @@ fill-opacity: 0;
 
 @media only screen and (min-width: 768px){
   .faq {
-    width: 704px;
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -138,7 +135,6 @@ fill-opacity: 0;
 
 @media only screen and (min-width: 1440px){
   .faq {
-    width: 1376px;
     padding-top: 82px;
     padding-bottom: 82px;
   }
