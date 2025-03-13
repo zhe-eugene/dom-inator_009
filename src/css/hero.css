@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
   position: relative;
 }
 
@@ -58,6 +58,7 @@
   flex: 1 1 100%;
   width: 100%;
 }
+
 .nowrap {
   white-space: nowrap;
 }
@@ -259,6 +260,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero {
+    padding-bottom: 48px;
+  }
+
   .background-base {
     background-image: url(/img/hero/hero-bgc-desk.webp);
     width: 50.56%;
