@@ -1,34 +1,19 @@
-body {
-    background-color: #1c1d20;
-}
-
 /* phone styles */
 .benefits {
     width: 100%;
-    display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 64px;
-    
 }
-
-/* .container {
-    width: 100%;
-    padding: 16px;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 .benefits-header {
     font-weight: 600;
-    font-size: 16px;
     line-height: 24px;
-    letter-spacing: -2%;
     text-transform: uppercase;
-    color: #FAFAFA66;
+    color: rgba(250, 250, 250, 0.4);
     text-align: left;
     margin-bottom: 16px;
     display: inline-block;
@@ -85,7 +70,6 @@ margin-bottom: 64px;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: -2%;
     display: block;
     color: #FAFAFA;
     margin-top: auto;
@@ -97,7 +81,6 @@ margin-bottom: 64px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -2%;
     color: #FAFAFA99;
     text-align: left;
     margin-top: 0;
@@ -112,7 +95,6 @@ margin-bottom: 64px;
     border-radius: 60px;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: -2%;
     color: white;
     background-color: transparent;
     text-decoration: none;
@@ -137,11 +119,11 @@ margin-bottom: 64px;
 
     }
 
-    /* .container {
+    .container-benefits {
         max-width: 768px;
-        margin-left: 32px;
-        margin-right: 32px;
-    } */
+        margin-right: 0;
+    }
+
     .benefits-container {
         align-items: flex-start;
         margin-left: auto;
@@ -155,8 +137,8 @@ margin-bottom: 64px;
     }
 
     .benefits-item {
+
         width: 100%;
-        max-width: none;
         height: 270px;
     }
 
@@ -173,19 +155,19 @@ margin-bottom: 64px;
         margin-right: auto;
     }
 
- /* .container {
+ .container-benefits {
        max-width: 1440px;
+       display: flex;
        align-items: center;
        justify-content: space-between;
        flex-direction: row;
        margin-left: auto;
-       margin-right: auto;
- } */
+       margin-right: 0;
+ } 
 
     .benefits-container {
-
         margin-left: auto;
-        margin-right: 32px;
+        margin-right: 0;
     }
 
     .benefits-header {

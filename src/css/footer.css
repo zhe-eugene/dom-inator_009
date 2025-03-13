@@ -4,6 +4,14 @@
     padding-bottom: 32px;
 }
 
+.footer {
+
+    background-image: url(../img/glass-footer1x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
 
 .title-wrapper {
     display: flex;
@@ -34,6 +42,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
+    position: relative;
+
 }
 
 .footer-send-email,
@@ -49,6 +59,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-bottom: 20px;
 
 }
 
@@ -60,6 +71,7 @@
 
 .footer-send-email {
     margin-bottom: 16px;
+
 }
 
 .footer-send-text {
@@ -135,6 +147,20 @@
 
 }
 
+body.modal-open {
+    overflow: hidden;
+
+}
+
+.footer-backdrop {
+    z-index: 1000;
+
+}
+
+.footer-modal {
+    z-index: 1001;
+}
+
 /* --------------------MODAL----------------------- */
 
 
@@ -198,6 +224,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
+    letter-spacing: -0.02em;
     margin-bottom: 16px;
 
 }
@@ -212,7 +239,16 @@
     .footer {
         padding-top: 80px;
         padding-bottom: 160px;
+
     }
+
+    .footer {
+        background-image: url(../img/glass-footer1x-tab.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+
 
     .title-wrapper {
         gap: 20px;
@@ -233,6 +269,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+
     }
 
     .footer-send-email {
@@ -284,17 +322,45 @@
     .footer-modal-message {
         text-align: center;
     }
+
+    .email-message {
+        font-size: 14px;
+        line-height: 1.28571;
+        letter-spacing: -0.02em;
+        margin-top: 4px;
+        margin-left: 4px;
+
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+    }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
 
-    .footer>.container {
-        padding: 0 196px;
+    .footer {
+        background-image: url(../img/glass-footer1x-desc.png);
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+
+    }
+
+    .footer .container {
+        max-width: 1048px;
     }
 
     .footer-send-email,
     .footer-send-text {
         max-width: 390px;
     }
+}
+
+
+#email.valid {
+    border-bottom: 2px solid #3cbc81;
+}
+
+#email.invalid {
+    border-bottom: 2px solid #e74a3b;
 }

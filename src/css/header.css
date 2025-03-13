@@ -1,3 +1,7 @@
+body.no-scroll {
+  overflow: hidden;
+}
+
 .header-container {
   padding: 32px 16px;
   background-color: rgba(0, 0, 0, 0);
@@ -7,7 +11,7 @@
   top: 0;
   width: 100%;
   height: auto;
-  z-index: 3;
+  z-index: 4;
 }
 
 .nav-list {
@@ -26,6 +30,7 @@
   letter-spacing: -0.02em;
   color: #fafafa;
   margin: 10px 0;
+  z-index: 4;
 }
 
 .anchor-footer,
@@ -58,6 +63,7 @@
   stroke-width: 2.5px;
   stroke: #fafafa;
 }
+
 .logo-img {
   border-radius: 18px;
   width: 80px;
@@ -90,6 +96,7 @@
     letter-spacing: -0.02em;
     color: #fafafa;
   }
+
   .anchor-footer {
     position: absolute;
     top: auto;
@@ -106,6 +113,7 @@
     text-align: center;
     background: #ed3b44;
   }
+
   .anchor-footer:hover,
   .anchor-footer:focus {
     background: #e0373f;
@@ -132,6 +140,7 @@
     opacity: 1;
   }
 }
+
 /* ------------------- mob menu------------------------- */
 
 .mob-menu {
@@ -203,6 +212,7 @@
   text-decoration-skip-ink: none;
   color: #fafafa;
 }
+
 .menu-item-mob:not(:last-child) {
   margin-bottom: 12px;
 }
