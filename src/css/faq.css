@@ -52,7 +52,9 @@ fill-opacity: 0;
 
 .accordion-content {
   padding: 0px;
-  display: none; 
+  max-height: 0;
+  overflow: hidden; 
+  transition: max-height 0.4s ease-in-out; 
 }
 
 .accordion-item.active .accordion-content {
