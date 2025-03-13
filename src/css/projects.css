@@ -53,6 +53,7 @@
 .technologies li {
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
+  padding: 13px 18px;
 
 
   color: #1c1d20;
